@@ -1,0 +1,168 @@
+/* =========================
+   CONTAINER GERAL
+========================= */
+.contato_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    background-color: #3F3F41;
+    padding: 1rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+.contato_form {
+    background-color: #DCDCDC;
+    padding: 1.5rem;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+/* TÍTULO */
+.contato_form h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #101010;
+}
+
+/* INPUTS / SELECT / TEXTAREA */
+.contato_form input,
+.contato_form select,
+.contato_form textarea {
+    background-color: #3F3F41;
+    width: 100%;
+    padding: 0.4rem 0.5rem;
+    border: none;
+    font-size: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.contato_form textarea {
+    resize: none;
+}
+
+/* PLACEHOLDER */
+.contato_form input::placeholder,
+.contato_form textarea::placeholder {
+    color: #ffffff;
+}
+
+/* BOTÃO */
+.button_Env {
+    margin-top: 0.8rem;
+    width: 80px;
+    padding: 0.3rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+    background-color: #F8F8F8;
+    color: #101010;
+    border-color: black;
+}
+
+/* =========================
+   DROPDOWN CUSTOM
+========================= */
+.custom_select {
+    position: relative;
+    width: 100%;
+    font-size: 0.75rem;
+}
+
+.select_display {
+    background-color: #3F3F41;
+    padding: 0.4rem 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.select_display:hover {
+    background-color: #3F3F41;
+}
+
+.arrow {
+    font-size: 0.6rem;
+}
+
+/* LISTA */
+.select_options {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #878585;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+.select_options li {
+    padding: 0.4rem 0.5rem;
+    cursor: pointer;
+}
+
+.select_options li:hover {
+    background-color: #393939;
+}
+
+/* =========================
+   ÁREA DE INFORMAÇÕES
+========================= */
+.contato_info {
+    color: white;
+    max-width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+}
+
+.contato_info p {
+    margin-bottom: 0.8rem;
+}
+
+.contato_redes {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 768px) {
+    .contato_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 1rem;
+    }
+
+    .contato_form select {
+        width: 100%;
+        max-width: 100%;
+        font-size: 0.75rem;
+    }
+
+    .contato_info {
+        text-align: center;
+    }
+
+    .contato_redes {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,35 @@
+
+.rodape {
+    background-color: rgb(255, 0, 0);
+    padding: 2rem 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    text-align: center;
+}
+
+.logoGarage {
+    align-items: center;
+    display: flex;
+    width: 90px;
+}
+.rodape_Texto,
+.rodape_Endere {
+  font-size: 0.85rem;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .rodape_Texto,
+  .rodape_Endere {
+    font-size: 0.75rem;
+  }
+
+  .logoGarage {
+    width: 75px;
+  }
+}
